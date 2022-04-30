@@ -36,7 +36,8 @@ class PreviewOperation : public MultiThreadedOperation {
 
   bool is_output_operation(bool /*rendering*/) const override
   {
-    return !G.background;
+    //    return !G.background;
+    return true;
   }
   void init_execution() override;
   void deinit_execution() override;
